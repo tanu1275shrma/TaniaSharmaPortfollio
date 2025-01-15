@@ -19,9 +19,9 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
-        Noor Mohammad.
+        Upender Singh Lakhwan
         <span className="text-textDark mt-2 lgl:mt-4">
-          I build things for the web.
+          Passionate Developer
         </span>
       </motion.h1>
       <motion.p
@@ -30,19 +30,23 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am a web developer with 4+ years of experience in React. I have a
-        strong foundation in front-end & back-end development and am skilled in
-        creating user-friendly and responsive web applications using React and
-        its ecosystem.{" "}
-        <a href="https://www.noormohammad.live/" target="_blank">
+        I am a software enginneer with a, <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
+        "Never Give Up"
+            <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+          </span> attitude and a passion
+        for solving complex problems. I excel in Data Structure & Algorithms and programming
+        languages like, Python, Javascript and C++. With experience leading teams, hosting
+        technical events and collaborating as a GDSC Lead, I thrive in dynamic environment.
+        I am driven to create impactful solutions and continuously grow in my field.{" "}
+        {/* <a href="https://linkedin.com/in/upenderlakhwan/" target="_blank">
           {" "}
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-            Learn more
+            Linked
             <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
           </span>
-        </a>
+        </a> */}
       </motion.p>
-      <a href="https://github.com/noorjsdivs" target="_blank">
+      {/* <a href="https://github.com/lakhwan" target="_blank">
         <motion.button
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -51,7 +55,7 @@ const Banner = () => {
         >
           Check out my project!
         </motion.button>
-      </a>
+      </a> */}
     </section>
   );
 };
