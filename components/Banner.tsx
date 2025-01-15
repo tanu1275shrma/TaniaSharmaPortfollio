@@ -31,7 +31,7 @@ const Banner = () => {
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         I am a software enginneer with a, <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-        "Never Give Up"
+        &quot;Never Give Up&quot;
             <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
           </span> attitude and a passion
         for solving complex problems. I excel in Data Structure & Algorithms and programming

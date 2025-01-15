@@ -11,7 +11,7 @@ const Apple = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         Passionate Teacher
-        <a href="https://www.youtube.com/@lakhwanscoding7003" target="_blank"><span className="text-textGreen tracking-wide">@Lakhwan's Coding</span></a>
+        <a href="https://www.youtube.com/@lakhwanscoding7003" target="_blank"><span className="text-textGreen tracking-wide">@Lakhwan&apos;s Coding</span></a>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
         Remote, IN
@@ -21,7 +21,7 @@ const Apple = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Uploaded engaging videos on game development and C++ basics on Lakhwan's Coding, receiving an excellent response from viewers.
+          Uploaded engaging videos on game development and C++ basics on Lakhwan&apos;s Coding, receiving an excellent response from viewers.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
