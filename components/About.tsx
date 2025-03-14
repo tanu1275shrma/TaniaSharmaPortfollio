@@ -32,9 +32,10 @@ const About = () => {
             I love bringing ideas to life through code. My journey into software
             development began when I first started exploring algorithms and
             building small programs in high school. Tinkering with logic and
-            solving problems hooked me, and I've been refining my skills ever
-            since. Whether it's crafting elegant solutions or leading technical
-            projects, I'm always eager to create something impactful!
+            solving problems hooked me, and I&apos;ve been refining my skills
+            ever since. Whether it&apos;s crafting elegant solutions or leading
+            technical projects, I&apos;m always eager to create something
+            impactful!
           </p>
 
           <p>Here are a few technologies I have been working with recently:</p>
