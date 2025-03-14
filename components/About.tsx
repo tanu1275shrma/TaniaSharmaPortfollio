@@ -4,6 +4,20 @@ import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const About = () => {
+  // Array of technologies
+  const technologies = [
+    "Typescript",
+    "Javascript",
+    "Nest.js",
+    "Node.js",
+    "React.js",
+    "Express.js",
+    "MongoDB",
+    "SQL",
+    "Python",
+    "C++",
+  ];
+
   return (
     <section
       id="about"
@@ -13,63 +27,26 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-          Hi there! My name is 
-          <span className="text-textGreen">
-           {" "}Upender Singh Lakhwan
-            </span>
-            , and I love bringing ideas to life through code. My journey into software development began when I first started exploring algorithms and building small programs in high school. Tinkering with logic and solving problems hooked me, and I’ve been refining my skills ever since. Whether it’s crafting elegant solutions or leading technical projects, I’m always eager to create something impactful!
+            Hi there! My name is
+            <span className="text-textGreen"> Upender Singh Lakhwan</span>, and
+            I love bringing ideas to life through code. My journey into software
+            development began when I first started exploring algorithms and
+            building small programs in high school. Tinkering with logic and
+            solving problems hooked me, and I've been refining my skills ever
+            since. Whether it's crafting elegant solutions or leading technical
+            projects, I'm always eager to create something impactful!
           </p>
 
           <p>Here are a few technologies I have been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Python
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Javascript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              C++
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Node.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              React.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MongoDB
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              SQL
-            </li>
+            {technologies.map((tech, index) => (
+              <li key={index} className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {tech}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group">
