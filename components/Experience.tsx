@@ -3,51 +3,41 @@ import SectionTitle from "./SectionTitle";
 import Apple from "./works/Apple";
 import Google from "./works/Google";
 import ReactBD from "./works/ReactBD";
+import DacoidDigital from "./works/DacoidDigital";
 
 const Experience = () => {
-  const [workReactbd, setWorkReactbd] = useState(true);
+  const [workDacoidDigital, setWorkDacoidDigital] = useState(true);
+  const [workReactbd, setWorkReactbd] = useState(false);
   const [workGoogle, setWorkGoogle] = useState(false);
   const [workApple, setWorkApple] = useState(false);
-  const [workSplash, setWorkSplash] = useState(false);
-  const [workAmazon, setWorkAmazon] = useState(false);
 
   const handleReactbd = () => {
     setWorkReactbd(true);
     setWorkGoogle(false);
     setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
+    setWorkDacoidDigital(false);
   };
 
   const handleGoogle = () => {
     setWorkReactbd(false);
     setWorkGoogle(true);
     setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
+    setWorkDacoidDigital(false);
   };
 
   const handleApple = () => {
     setWorkReactbd(false);
     setWorkGoogle(false);
     setWorkApple(true);
-    setWorkSplash(false);
-    setWorkAmazon(false);
+    setWorkDacoidDigital(false);
   };
-  const handleSplash = () => {
+  const handleDacoidDigital = () => {
     setWorkReactbd(false);
     setWorkGoogle(false);
     setWorkApple(false);
-    setWorkSplash(true);
-    setWorkAmazon(false);
+    setWorkDacoidDigital(true);
   };
-  const handleAmazon = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(true);
-  };
+
   return (
     <section
       id="experience"
@@ -56,6 +46,16 @@ const Experience = () => {
       <SectionTitle title="My experience" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
+          <li
+            onClick={handleDacoidDigital}
+            className={`${
+              workDacoidDigital
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor text-textDark"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+          >
+            Dacoid Digital
+          </li>
           <li
             onClick={handleReactbd}
             className={`${
@@ -76,7 +76,6 @@ const Experience = () => {
           >
             Freelancer
           </li>
-
           <li
             onClick={handleApple}
             className={`${
@@ -87,11 +86,11 @@ const Experience = () => {
           >
             YouTube
           </li>
-          
         </ul>
         {workReactbd && <ReactBD />}
         {workGoogle && <Google />}
         {workApple && <Apple />}
+        {workDacoidDigital && <DacoidDigital />}
       </div>
     </section>
   );
