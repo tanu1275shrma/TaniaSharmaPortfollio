@@ -1,6 +1,4 @@
-import { amazonImg, cyberImg, noorShop, pythonTutor } from "@/public/assets";
 import Image from "next/image";
-import { AiOutlineYoutube } from "react-icons/ai";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -8,54 +6,64 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 const projectsData = [
   {
     id: 1,
-    title: "CGC Happenings",
-    image: amazonImg,
+    title: "The Wild Oasis",
+    image: "/assets/images/wildoasis.jpeg",
     description:
-      "A dynamic website for CGC Happenings, designed to showcase the latest events, activities, and announcements at CGC. Explore event details, connect with organizers, and stay updated with real-time notifications. A seamless platform for enhancing campus engagement and collaboration.",
-    technologies: ["React.js", "Express.js", "Firebase", "Javascript", "MUi"],
-    liveLink: "https://www.cgchappenings.tech/",
-    githubLink: "",
-    demoLink:
-      "https://www.linkedin.com/posts/upenderlakhwan_cgchappenings-mernstack-eventmanagement-activity-7157810738806329345-ff5b?utm_source=share&utm_medium=member_desktoptarget=",
+      "The Wild Oasis is a full-stack hotel management platform that delivers a seamless booking experience and streamlined operations. It enables users to browse rooms, book stays, and manage reservations effortlessly, while providing administrators with real-time dashboards, automated check-ins/outs, and occupancy analytics. Built with a secure authentication, the platform ensures high performance, user engagement, and operational efficiency",
+    technologies: [
+      "React.js",
+      "React Query",
+      "Supabase",
+      "JWT",
+      "Styled Components",
+    ],
+    liveLink: "wild-oasis-delta-ruby.vercel.app",
+    githubLink: "https://github.com/tanu1275shrma/WildOasis",
     isReversed: false,
   },
   {
     id: 2,
-    title: "Task Hive",
-    image: cyberImg,
+    title: "Natour-main",
+    image: "/assets/images/natourmain.jpeg",
     description:
-      "A feature-rich task management platform, Task Hive, designed to go beyond a simple to-do list. Organize your tasks, set priorities, and collaborate with others seamlessly. Log in to experience smart scheduling, progress tracking, and a streamlined workflow for achieving your goals.",
-    technologies: ["MUi", "SpringBoot", "JWT", "Java", "React.js"],
-    liveLink: "",
-    githubLink: "https://github.com/lakhwan/task-hive",
-    demoLink:
-      "https://www.linkedin.com/posts/upenderlakhwan_fullstackdevelopment-springboot-vitejs-activity-7224429060456595457-Uejg?utm_source=share&utm_medium=member_desktop",
+      "Built a tour booking web application using Node.js, Express, and MongoDB. Added secure login/signup with JWT, tour management with CRUD operations, Stripe payments, and a user dashboard for profile updates and bookings. Designed with MVC pattern, responsive frontend, and cloud deployment with security features like Helmet and rate limiting.",
+    technologies: ["JavaScript", "React.js", "MERN", "MongoDB", "JWT"],
+    liveLink: "https://github.com/tanu1275shrma/Natour-Main",
+    githubLink: "https://github.com/tanu1275shrma/Natour-Main",
     isReversed: true,
   },
   {
     id: 3,
-    title: "AI Podcast Generation",
-    image: noorShop,
+    title: "Fast Pizza Co.",
+    image: "/assets/images/FastReactPizza.jpeg",
     description:
-      "An innovative Automation Podcast Solution that transforms articles into audio podcasts. Simply provide an article link in a Tkinter-based GUI, and the tool fetches the details. Utilizing the Gemini API for speech generation and PyHt for voice synthesis, it seamlessly converts text to audio and plays it automatically.",
-    technologies: ["Python", "Selenium", "PyHT", "Gemini", "AI"],
-    liveLink: "",
-    githubLink: "https://github.com/LaKhWaN/Automation-Podcast-Solution",
-    demoLink:
-      "https://www.linkedin.com/posts/upenderlakhwan_python-automation-podcast-activity-7283826580605255680-4tGq?utm_source=share&utm_medium=member_desktop",
+      "Developed a pizza ordering web application where users can browse menus, customize pizzas, add items to cart, and place orders online. Implemented user authentication, order tracking, and real-time updates using React (frontend) and Node.js/Express with MongoDB (backend). Integrated secure payments, responsive design, and cloud deployment for a smooth user experience",
+    technologies: ["React.js", "Redux", "Tailwind CSS"],
+    liveLink: "https://fast-react-pizza-psi-one.vercel.app/",
+    githubLink: "https://github.com/tanu1275shrma/FastReactPizza",
     isReversed: false,
   },
   {
     id: 4,
-    title: "Python Tutor",
-    image: pythonTutor,
+    title: "Interno",
+    image: "/assets/images/interno.jpeg",
     description:
-      "Built a Python Tutor website for childrens to learn Python with integrated Gemini AI Chatbot",
-    technologies: ["React.js", "Express.js", "Firebase", "Javascript", "MUi"],
-    liveLink: "https://skc-upenderlakhwan.onrender.com/",
-    githubLink: "https://github.com/LaKhWaN/Python-Tutor",
-    demoLink: "",
+      "Developed a responsive website for an interior design company showcasing services, portfolio, and client testimonials. Designed a modern, user-friendly UI with HTML, CSS, JavaScript, and Tailwind CSS/React for smooth navigation. Focused on clean layouts, responsive design, and performance optimization to provide a professional brand presence",
+    technologies: ["React.js", "TailwindCSS", "Javascript"],
+    liveLink: "https://interno05.netlify.app/",
+    githubLink: "https://github.com/tanu1275shrma/Interno",
     isReversed: true,
+  },
+  {
+    id: 5,
+    title: "Cinefy",
+    image: "/assets/images/cinefy.jpeg",
+    description:
+      "Developed a movie rating and watchlist application where users can search movies, rate them, and add to their personal watchlist. Implemented user authentication, real-time updates, and responsive design using React, Node.js, Express, and MongoDB. Focused on seamless user experience, interactive UI, and efficient data handling for personalized recommendations",
+    technologies: ["React.js", "TailwindCSS"],
+    liveLink: "cinefy-sandy.vercel.app",
+    githubLink: "https://github.com/tanu1275shrma/Cinefy",
+    isReversed: false,
   },
 ];
 
@@ -81,6 +89,8 @@ const Projects = () => {
                   className="w-full h-full object-contain"
                   src={project.image}
                   alt={project.title}
+                  width={500}
+                  height={300}
                 />
                 <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
               </div>
@@ -128,15 +138,6 @@ const Projects = () => {
                     target="_blank"
                   >
                     <TbBrandGithub />
-                  </a>
-                )}
-                {project.demoLink && (
-                  <a
-                    className="hover:text-textGreen duration-300"
-                    href={project.demoLink}
-                    target="_blank"
-                  >
-                    <AiOutlineYoutube />
                   </a>
                 )}
               </div>

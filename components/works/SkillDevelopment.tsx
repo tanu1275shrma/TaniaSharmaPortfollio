@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
+import { motion } from "framer-motion";
 
-const ReactBD = () => {
+const SkillDevelopment = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,34 +10,44 @@ const ReactBD = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Full Stack Intern
-        <span className="text-textGreen tracking-wide">@Makes360</span>
+        Skill Development{" "}
+        <span className="text-textGreen tracking-wide">
+          @Self-Driven Learning
+        </span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Nov 2022 - Jun 2023
+        Jun 2025 - Sept 2025
       </p>
+
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Developed a comprehensive admin panel for administrators to manage.
+          React Mastery - Developed several personal projects with React,
+          focusing on component reusability, state management, and performance
+          optimization.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Created RESTful APIs in Node.js using Express.js framework.
+          Full-Stack Projects: Designed and built full-stack applications using
+          React, Node.js, Express, and MongoDB, focusing on developing robust
+          and scalable applications with user authentication, CRUD operations,
+          and RESTful API integrations.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Successfully deployed over five full-stack real-world client projects.
+          Continuous Learning: Worked on enhancing backend skills, integrating
+          third-party services, and learning DevOps tools to deploy and maintain
+          applications more efficiently.
         </li>
       </ul>
     </motion.div>
   );
 };
 
-export default ReactBD;
+export default SkillDevelopment;

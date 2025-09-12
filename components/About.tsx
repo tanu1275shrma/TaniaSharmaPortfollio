@@ -6,15 +6,13 @@ import { AiFillThunderbolt } from "react-icons/ai";
 const About = () => {
   // Array of technologies
   const technologies = [
-    "Typescript",
     "Javascript",
-    "Nest.js",
+    "Next.js",
     "Node.js",
     "React.js",
     "Express.js",
     "MongoDB",
-    "SQL",
-    "Python",
+    "Supabase",
     "C++",
   ];
 
@@ -28,14 +26,15 @@ const About = () => {
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
             Hi there! My name is
-            <span className="text-textGreen"> Upender Singh Lakhwan</span>, and
-            I love bringing ideas to life through code. My journey into software
-            development began when I first started exploring algorithms and
-            building small programs in high school. Tinkering with logic and
-            solving problems hooked me, and I&apos;ve been refining my skills
-            ever since. Whether it&apos;s crafting elegant solutions or leading
-            technical projects, I&apos;m always eager to create something
-            impactful!
+            <span className="text-textGreen"> Tania Sharma</span>, a passionate
+            Full Stack Developer dedicated to turning ideas into high-quality,
+            scalable applications. I specialize in building seamless frontend
+            experiences and robust backend systems, combining creativity with
+            technical precision. I thrive on crafting impactful solutions,
+            optimizing performance, and delivering projects that make a real
+            difference., and I&apos;ve been refining my skills ever since.
+            Whether it&apos;s crafting elegant solutions or leading technical
+            projects, I&apos;m always eager to create something impactful!
           </p>
 
           <p>Here are a few technologies I have been working with recently:</p>
@@ -54,14 +53,15 @@ const About = () => {
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
               <Image
-                className="rounded-lg h-full object-cover"
+                className="rounded-lg h-full object-top object-cover"
                 src={profileImg}
                 alt="profileImg"
+                fill
               />
               <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </div>
-          <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
+          <div className="hidden lgl:inline-flex w-80 h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
         </div>
       </div>
     </section>

@@ -1,7 +1,17 @@
 import logo from "./images/logo.png";
 import profileImg from "./images/profile.png";
-import amazonImg from "./images/amazonImg.png";
-import cyberImg from "./images/cyberBlog.png";
-import noorShop from "./images/noorShop.png";
-import pythonTutor from "./images/python_tutor.png";
-export { logo, profileImg, amazonImg, cyberImg, noorShop, pythonTutor };
+import wildoasis from "./images/wildoasis.jpeg";
+import natourmain from "./images/natourmain.jpeg";
+import FastReactPizza from "./images/FastReactPizza.jpeg";
+import cinefy from "./images/cinefy.jpeg";
+import interno from "./images/interno.jpeg";
+
+export {
+  logo,
+  profileImg,
+  wildoasis,
+  natourmain,
+  FastReactPizza,
+  cinefy,
+  interno,
+};
