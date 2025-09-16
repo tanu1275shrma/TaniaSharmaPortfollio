@@ -40,7 +40,7 @@ const Archive = () => {
           title="BakeD'Nut"
           des="A React-based interactive slider component for showcasing products or images with smooth transitions, responsive design, and customizable controls."
           listItem={["React.js"]}
-          link="bake-dnut.vercel.app"
+          link="https://bake-dnut.vercel.app/"
         />
       </div>
     </div>
