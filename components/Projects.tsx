@@ -61,7 +61,7 @@ const projectsData = [
     description:
       "Developed a movie rating and watchlist application where users can search movies, rate them, and add to their personal watchlist. Implemented user authentication, real-time updates, and responsive design using React, Node.js, Express, and MongoDB. Focused on seamless user experience, interactive UI, and efficient data handling for personalized recommendations",
     technologies: ["React.js", "TailwindCSS"],
-    liveLink: "cinefy-sandy.vercel.app",
+    liveLink: "https://cinefy-sandy.vercel.app/",
     githubLink: "https://github.com/tanu1275shrma/Cinefy",
     isReversed: false,
   },
