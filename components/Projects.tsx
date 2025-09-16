@@ -17,7 +17,7 @@ const projectsData = [
       "JWT",
       "Styled Components",
     ],
-    liveLink: "wild-oasis-delta-ruby.vercel.app",
+    liveLink: "https://wild-oasis-delta-ruby.vercel.app/",
     githubLink: "https://github.com/tanu1275shrma/WildOasis",
     isReversed: false,
   },
