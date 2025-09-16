@@ -28,7 +28,7 @@ const Archive = () => {
           title="Natour"
           des="A tour booking web app built with Node.js, Express, and MongoDB, featuring secure authentication, Stripe payments, and a user-friendly booking dashboard."
           listItem={["HTML", "CSS", "JS"]}
-          link="https://react-quiz-seven-peach.vercel.app/"
+          link="https://natour-phi.vercel.app/"
         />
         <ArchiveCard
           title="WorldWise"
