@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 import HopingMinds from "./works/HopingMinds";
 import SkillDevelopment from "./works/SkillDevelopment";
+import MyProFunnels from "./works/MyProFunnels";
 
 const Experience = () => {
   const [activeExperience, setActiveExperience] = useState("hopingMinds");
@@ -40,11 +41,22 @@ const Experience = () => {
           >
             Skill Development
           </li>
+          <li
+            onClick={() => handleExperienceChange("MyProFunnels")}
+            className={`${
+              activeExperience === "MyProFunnels"
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor text-textDark"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+          >
+            MyProFunnels
+          </li>
         </ul>
 
         <div className="w-full">
           {activeExperience === "hopingMinds" && <HopingMinds />}
           {activeExperience === "skillDevelopment" && <SkillDevelopment />}
+          {activeExperience === "MyProFunnels" && <MyProFunnels />}
         </div>
       </div>
     </section>
