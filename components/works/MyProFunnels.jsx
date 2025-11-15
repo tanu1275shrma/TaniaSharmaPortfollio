@@ -19,12 +19,12 @@ const MyProFunnels = () => {
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            MyProFunnels
+            MyProFunnelsVentures.Pvt.Ltd
           </a>
         </span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Sep 2025 - Current
+        Sep 2025 - Present
       </p>
 
       <ul className="mt-6 flex flex-col gap-3">
